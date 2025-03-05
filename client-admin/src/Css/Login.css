@@ -1,0 +1,133 @@
+.login-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-image: url('https://wallpapercrafter.com/sizes/1366x768/108198-purple-nature-colorful-trees-forest-smoke-mist-artwork.jpg'); /* Replace with the path to your background image */
+  height: 740px;
+}
+
+.login-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.7); /* Add some transparency */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+
+.login-header {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  position: relative;
+  animation: text-glow 0.1s infinite;
+}
+
+@keyframes text-glow {
+  0% {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 55px #ff00ff, 0 0 75px #ff00ff;
+  }
+  100% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 75px #ff00ff, 0 0 100px #ff00ff, 0 0 150px #ff00ff;
+  }
+}
+
+.login-form {
+  width: 80%;
+}
+
+.login-form table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 5px;
+  display: flex;
+  justify-content: center; /* Center the table */
+  align-items: center; /* Center the table vertically */
+}
+
+.login-form td {
+  padding: 10px 1;
+  text-align: center; /* Center-align text within the table cells */
+}
+
+.login-input {
+  width: 90%; /* Adjusted width as needed */
+  padding: 6px;
+  margin: 4px 0; /* Reduced vertical margin */
+  border: 1px solid #ba1d6b;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+  flex: 2; /* Allow input to take up more space */
+}
+
+@keyframes border-glow {
+  0% {
+    box-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4, 0 0 15px #ff69b4; /* Màu hồng nhạt */
+  }
+  50% {
+    box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4; /* Màu hồng nhạt */
+  }
+  100% {
+    box-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4, 0 0 15px #ff69b4; /* Màu hồng nhạt */
+  }
+}
+
+.login-input:focus {
+  border-color: #ff69b4; /* Đổi viền thành màu hồng nhạt */
+  outline: none;
+  animation: border-glow 1s infinite alternate; /* Thêm hiệu ứng nhấp nháy */
+}
+
+
+
+@keyframes blink-wave {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: 200px 0;
+  }
+}
+
+.login-submit {
+  padding: 6px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+  width: 50%;
+  position: relative;
+  background: linear-gradient(90deg, #333, #ff69b4, #333);
+  background-size: 200%;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.login-submit:hover {
+  animation: blink-wave 1.5s infinite linear; /* Hiệu ứng sóng nhấp nháy */
+}
+
+
+
+.login-label {
+    font-weight: bold;
+    text-align: right;
+    margin-right: 10px;
+    padding-bottom: 5px; /* Thử sử dụng padding-bottom thay vì margin-bottom */
+    flex: 1;
+    color: #f9049b;
+}
+  
+
+
+

@@ -1,0 +1,127 @@
+/* order */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: -250px; 
+  
+  }
+  
+  .align-center {
+    width: fit-content;
+    margin: 0 auto;
+  
+  }
+  .approved {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .canceled {
+    color: red;
+    font-weight: bold;
+
+  }
+  .pending {
+    color: #F2D21E;
+    font-weight: bold;
+  }
+
+  .approved-button {
+    color: white;
+    background-color: rgb(76, 249, 76);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .canceled-button {
+    color: white;
+    background-color: rgb(248, 100, 100);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+
+  }
+  
+  .approved-button:hover {
+    background-color: darkgreen; /* Màu nền khi hover */
+    opacity: 0.8; /* Độ mờ khi hover */
+  }
+  
+  .canceled-button:hover {
+    background-color: darkred; /* Màu nền khi hover */
+    opacity: 0.8; /* Độ mờ khi hover */
+  }
+
+ /* Widening the datatable1 */
+tr:first-child.datatable1 {
+  background-color: #ffcc00;
+  width: 100%; /* Set to 100% width */
+}
+tr:first-child.datatable2 {
+  background-color: #ffcc00;
+  width: 100%; /* Set to 100% width */
+}
+.datatable1 {
+  width: 140%; /* Ensuring the entire table spans full width */
+  max-width: 1500px; /* Optional, set a max-width if you want */
+  margin: 0 auto; /* Centering the table */
+  border-collapse: collapse; /* Optional, makes table borders cleaner */
+  margin-left: -180px; /* Shifting slightly to the left */
+
+}
+.datatable2 {
+  border-collapse: collapse; /* Optional, makes table borders cleaner */
+
+}
+.datatable1 td, .datatable1 th {
+  padding: 15px 10px; /* Adjust padding to increase cell height */
+  height: 10px; /* Set a minimum height for the cells */
+  text-align: left; /* Align text to the left (optional) */
+  vertical-align: middle; /* Vertically center content in the cells */
+}
+/* Modal background (overlay) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+  padding-top: 60px;
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%; /* Reduce the width of the modal */
+  max-width: 800px; /* Optional: Set a maximum width */
+  overflow: hidden;
+  border-radius: 8px; /* Optional: adds rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better look */
+  position: relative; /* Required for slight right positioning */
+  left: 460px; /* Move the modal content slightly to the right */
+}
+
+/* Close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,21 @@
+.input-icon-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .input-icon-container input {
+    border: none;
+    flex: 1;
+    outline: none;
+    padding: 5px;
+  }
+  
+  .input-icon-container svg {
+    margin-right: 5px;
+    color: gray; /* You can change this color */
+    font-size: 1.2em;
+  }
+  

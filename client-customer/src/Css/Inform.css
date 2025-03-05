@@ -1,0 +1,420 @@
+
+
+
+/* phóng to nhỏ icon  */
+.link-icon {
+  margin-right: 5px;
+  transition: transform 0.3s ease; /* Hiệu ứng transform */
+}
+
+.cart-item-count {
+  color: red;
+}
+.login-link:hover .link-icon,
+.signup-link:hover .link-icon,
+.active-link:hover .link-icon,
+.logout-link:hover .link-icon,
+.profile-link:hover .link-icon,
+.orders-link:hover .link-icon,
+.cart-link:hover .link-icon {
+  transform: scale(1.2); /* Phóng to nhỏ icon khi hover */
+}
+.cart-link {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+    margin: 0 5px;
+    background-color: #FFCC00  ; /* Màu nền vàng nhạt */
+    color: #000000; /* Màu chữ */
+  }
+  
+  .cart-link:hover {
+    background-color: #f3d954; /* Màu nền khi hover */
+    color: #000000; /* Màu chữ khi hover */
+}
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  .cart-notification {
+    position: absolute;
+    top: -5px;
+    right: 75px;
+    background-color: red; /* Màu cam cho thông báo */
+    color: white;
+    border-radius: 70%;
+    padding: 2px 6px;
+    font-size: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 8px;
+    height: 15px;
+  }
+/* Hi */
+.greeting {
+    font-weight: bold;
+  }
+
+/* tên khách hàng */
+.ten-khach-hang {
+  color: red;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  animation: colorGlow 2s ease-in-out infinite;
+}
+
+@keyframes colorGlow {
+  0% {
+    color: red;
+    text-shadow: 0 0 10px red;
+  }
+  25% {
+    color: orange;
+    text-shadow: 0 0 20px orange;
+  }
+  50% {
+    color: yellow;
+    text-shadow: 0 0 30px yellow;
+  }
+  75% {
+    color: green;
+    text-shadow: 0 0 20px green;
+  }
+  100% {
+    color: blue;
+    text-shadow: 0 0 10px blue;
+  }
+}
+
+
+  
+  /* Modal container */
+.modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fff; /* White background as in the image */
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  position: relative;
+}
+
+/* Modal title */
+.modal-title {
+  font-size: 24px;
+  color: #d32f2f; /* Red color matching the image */
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Modal image */
+.modal-image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+/* Modal buttons */
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.signupButton, .loginButton {
+  background-color: #f44336; /* Red button background matching the image */
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px; /* Rounded button corners */
+  cursor: pointer;
+  margin: 10px;
+  font-size: 16px;
+  flex: 1;
+}
+
+.signupButton {
+  background-color: #f44336; /* Red for sign up */
+}
+
+.loginButton {
+  background-color: #e64a19; /* Slightly different shade of red for login */
+}
+
+/* Button hover effect */
+.signupButton:hover, .loginButton:hover {
+  opacity: 0.9; /* Slight opacity on hover */
+}
+
+/* Close button */
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.closeButton:hover {
+  color: #000; /* Darker on hover */
+}
+/* Add this to your CSS file */
+.login-link {
+  cursor: pointer; /* Ensures hand icon appears on hover */
+  text-decoration: none; /* Optional: remove underline */
+  color: inherit; /* Keep the same color */
+}
+
+.account-section {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer; /* Make it clear that this is clickable */
+}
+
+.large-account-icon {
+  font-size: 1.5rem; /* Increase size of the account icon */
+  margin-right: 12px; /* Space between icon and greeting text */
+}
+
+
+
+.dropdown-menu {
+  position: absolute;
+  top: 150%;
+  left: 0;
+  background-color: #ffffff; /* White background */
+  border-radius: 8px; /* Rounded corners */
+  border: 1px solid #e0e0e0; /* Lighter border color */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); /* Softer shadow */
+  padding: 10px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  opacity: 0; /* Start hidden */
+  visibility: hidden; /* Prevent mouse interaction when hidden */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+  width: 180px; /* Set to your desired width */
+
+}
+
+.dropdown-menu.show {
+  opacity: 1; /* Fade in */
+  visibility: visible; /* Show element */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Thời gian hiện menu */
+
+}
+
+.dropdown-item {
+  padding: 12px 15px; /* Increased padding for a more spacious look */
+  text-decoration: none;
+  color: #333; /* Darker text color */
+  display: flex;
+  align-items: center;
+  border-radius: 4px; /* Rounded corners for items */
+  transition: background-color 0.2s ease; /* Smooth background transition */
+}
+
+.dropdown-item:hover {
+  background-color: #e8f0fe; /* Light blue background on hover */
+  color: #0056b3; /* Dark blue text color on hover */
+}
+
+.dropdown-item .link-icon {
+  margin-right: 5px; /* Space between icon and text */
+}
+
+.account-icon {
+  position: relative;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 1.3rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.account-icon:hover {
+  color: #46484a;
+  animation: shake 0.3s ease-in-out; /* Thêm animation shake */
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-2px); }
+  50% { transform: translateX(2px); }
+  75% { transform: translateX(-2px); }
+}
+
+
+
+.tooltip-content {
+  display: none; /* Hide by default */
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  background-color: #fff;
+  padding: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 250px; /* Set desired width */
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 15px;
+}
+
+.account-icon:hover .tooltip-content {
+  display: flex; /* Show tooltip on hover */
+}
+
+.tooltip-image {
+  width: 50px;
+  height: auto;
+}
+
+.tooltip-text {
+  color: #333;
+  font-size: 14px;
+  flex: 1; /* Allow text to take up remaining space */
+  font-weight: bold;
+}
+
+
+.logout-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure the modal is on top */
+}
+
+.logout-modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px; /* Increased border radius for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 360px; /* Slightly narrower width */
+  width: 100%;
+}
+
+.logout-modal-image {
+  width: 100%; /* Make the image responsive */
+  max-width: 300px; /* Reduced max width */
+  margin-bottom: 20px;
+}
+
+.logout-modal-title {
+  font-size: 20px; /* Reduced font size to match the compact layout */
+  font-weight: bold; /* Add bold styling */
+  color: #333; /* Darker color */
+  margin-bottom: 8px;
+}
+
+.logout-modal-description {
+  margin-bottom: 20px;
+  font-size: 14px; /* Reduced font size for compact layout */
+  color: #666; /* Gray color for description text */
+}
+
+.logout-modal-buttons {
+  display: flex;
+  justify-content: center; /* Center the buttons */
+  gap: 10px; /* Adjust the space between buttons */
+}
+
+.logout-close-button {
+  background: #b22222; /* Solid red background for the primary button */
+  color: white;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px 40px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.logout-close-button:hover {
+  background: #8b0000; /* Darker red on hover */
+}
+
+.logout-confirm-button {
+  background: white; /* White background for the outlined button */
+  color: #b22222; /* Red text color */
+  border: 1px solid #b22222; /* Red border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.logout-confirm-button:hover {
+  background: #ec4747; /* Red background on hover */
+  color: white; /* White text on hover */
+}
+/*fire day*/
+.centered-fire-day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1; /* Ensures it takes up the necessary space */
+  font-size: 1.2rem;
+}
+
+.fire-day-icon {
+  height: 30px; /* Increase the size */
+  width: 30px;  /* Ensure the icon is square */
+  vertical-align: middle; /* Vertically center with the text */
+}
+
+.fire-day-text {
+  font-weight: bold;
+  font-size: 18px; /* Adjust text size if needed */
+  background: linear-gradient(90deg, #cc59ce, #e30a40);
+  background-clip: text;
+  -webkit-background-clip: text; /* For Safari and Chrome */
+  color: transparent;
+  -webkit-text-fill-color: transparent; /* For Safari and Chrome */
+  display: inline-block; /* Keep the text inline with the icon */
+  vertical-align: middle; /* Ensure text and icon are aligned */
+}
+
+
+.border-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,142 @@
+#backToTopBtnProduct {
+    display: none;
+    position: fixed;
+    right: 10px;
+    bottom: 100px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #f9f9f9;
+    color: black;
+    cursor: pointer;
+    padding: 15px 50px;
+    border-radius: 12px;
+    font-size: 14px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  #backToTopBtnProduct:hover {
+    background-color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+  }
+  
+  #backToTopBtnProduct img {
+    width: 50px; /* Kích thước tương tự với các nút khác */
+    height: 50px;
+    margin-right: 0;
+    transition: transform 0.3s ease;
+  }
+  
+  #backToTopBtnProduct:hover img {
+    transform: scale(1.2); /* Phóng to ảnh khi hover */
+  }
+  
+
+
+
+  .footer-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px 60px; /* Increased padding for wider layout */
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    max-width: 1800px; /* Set a max-width to control the overall width */
+    width: 100%;
+    margin: 0 auto; /* Center the footer on larger screens */
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.footer-section {
+    width: 25%;
+}
+
+.footer-section h3 {
+    color: #d81920;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #d81920;
+}
+
+.footer-contact {
+    width: 25%;
+    font-size: 0.9em;
+}
+
+.footer-contact div {
+    margin: 8px 0;
+}
+
+.footer-contact a {
+    text-decoration: none;
+    color: #2d8aee;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+    color: #d81920;
+}
+
+.footer-partners {
+  display: flex;
+  flex-direction: column; /* Stack title and logos container vertically */
+  align-items: flex-start; /* Align title and logos to the left */
+  gap: 10px; /* Space between the heading and logos */
+}
+
+.footer-partners h4 {
+  margin: 0;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.footer-partners-logos {
+  display: flex;
+  gap: 10px; /* Space between the logos */
+}
+
+.footer-partners-logos img {
+  width: 0px; /* Adjust width for logos */
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px; /* Optional: rounded corners for logos */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Optional: subtle shadow for logos */
+}
+
+
+.footer-bottom-info {
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 0.8em;
+    color: #666;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}

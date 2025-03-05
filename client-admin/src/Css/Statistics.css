@@ -1,0 +1,126 @@
+.statistics-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px;
+    background: linear-gradient(145deg, #f5f5f5, #ffffff);
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(255, 255, 255, 0.8);
+    max-width:400%;
+    width: 400%;
+    margin-top: 40px; /* Dịch xuống dưới */
+    margin-left: -250px; /* Dịch qua trái */
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+/* Phần "Quản lí bán hàng" căn trái */
+.statistics-section-heading {
+    font-weight: bold;
+    font-size: 1.2em; /* Giảm font-size */
+    color: black;
+    padding: 8px; /* Giảm padding để giảm chiều cao */
+    border-radius: 8px;
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Bảng chính */
+.statistics-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 6px; /* Giảm khoảng cách giữa các dòng */
+    font-size: 0.9em; /* Giảm font-size */
+    color: #2c3e50;
+
+}
+
+/* Tiêu đề bảng */
+.statistics-table th {
+    padding: 8px 10px; /* Giảm padding */
+    font-weight: bold;
+    border: 1px solid #e0e0e0;
+    cursor: default;
+    font-size: 1.2em;
+    
+}
+
+/* Dòng dữ liệu trong bảng */
+.statistics-table td {
+    padding: 8px; /* Giảm padding để giảm chiều cao */
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: default;
+    border: 1px solid #e0e0e0;
+    
+}
+
+/* Nút xem chi tiết */
+.detail-button {
+    padding: 6px 10px; /* Giảm padding */
+    font-size: 0.85em;
+    font-weight: bold;
+    background-color: #1abc9c;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    margin: auto; /* Căn giữa theo chiều ngang */
+    display: flex;
+    align-items: center; /* Căn giữa biểu tượng bên trong nút */
+    justify-content: center;
+}
+
+.detail-button:hover {
+    background-color: #39cbb0;
+}
+
+/* Nút export PDF */
+.export-button {
+    align-self: flex-end;
+    margin-top: 10px; /* Giảm margin-top */
+    padding: 8px 16px; /* Giảm padding */
+    background-color: #e74c3c;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.export-button:hover {
+    background-color: #c0392b;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+/* Căn giữa riêng cho cột "Số lượng" */
+.statistics-table th:nth-child(2),
+.statistics-table td:nth-child(2) {
+    text-align: center; /* Căn giữa */
+}
+
+/* Căn trái các cột còn lại */
+.statistics-table th:not(:nth-child(2)),
+.statistics-table td:not(:nth-child(2)) {
+    text-align: left; /* Căn trái */
+}
+.statistics-table th:last-child {
+    text-align: center;
+    vertical-align: middle;
+}
+.statistics-table th:first-child {
+    text-align: center;
+    vertical-align: middle;
+}
+.statistics-table td:first-child {
+    text-align: center;
+    vertical-align: middle;
+}
