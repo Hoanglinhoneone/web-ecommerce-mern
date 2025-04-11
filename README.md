@@ -21,6 +21,9 @@
 - **Database**: MongoDB
 - **Authentication**: JSON Web Tokens (JWT)
 - **Authorization**: Phân quyền bằng cách sử dụng role (Guest, User, Admin)
+## Kết quả độ phủ Unit Test (Develop by N09) 
+  ![image](https://github.com/user-attachments/assets/6b8096b5-2141-436d-965c-4880a088a086)
+
   
 ## Cài đặt và Chạy Dự Án
 
